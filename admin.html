@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Girişi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="admin-container" id="login-section">
+    <h2>Admin Girişi</h2>
+    <input type="text" id="username" placeholder="Kullanıcı Adı" />
+    <input type="password" id="password" placeholder="Şifre" />
+    <button onclick="login()">Giriş Yap</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <div class="admin-container hidden" id="upload-section">
+    <h2>Albüm Ekle</h2>
+    <input type="text" id="album-title" placeholder="Albüm Adı" />
+    <input type="file" id="album-image" accept="image/*" />
+    <button onclick="uploadAlbum()">Yükle</button>
+    <p id="upload-msg"></p>
+
+    <h3>Mevcut Albümler</h3>
+    <ul id="album-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
